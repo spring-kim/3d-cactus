@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<br>
+<img src="SIGN UP.PNG" width="100%">
+<br>
+<br>
+<br>
+
+<center>
+     <legend><h2>G-code 파일 업로드</h2></legend>
+     <h3>
+     <table>
+     <form action="UploadService">
+          <tr>
+              <td>G-code : </td>
+              <td><input type="file" value="파일 선택" name="file"/></td>
+          </tr>
+          </form>
+     </table>
+   </h3>
+     </center>
+
+<html lang="ko">
+	<head>
+	<meta charset="utf-8">
+		<title>HTML</title>
+    <center>
+      <button onclick="jbFunc()">변환</button>
+      <br>
+      <br>
+    <style>
+			#jb {
+				width: 80%;
+				height: 40px;
+			}
+		</style>
+
+		<script>
+			function jbFunc() {
+				document.getElementById( 'jb' ).value = '100';
+        cnt = 0;
+        stopCheck = false;
+        setInterval(function(){
+            if(stopCheck == false) {
+                document.getElementsByTagName('progress')[0].value = cnt;
+                document.getElementsByTagName('b')[0].innerText = cnt + '%';
+                cnt++;
+                if (cnt > 100) {
+                    stopCheck = true;
+                    document.getElementsByTagName('p')[0];
+                }
+            }
+        },100);
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<progress value="0" max="100" id="jb"></progress>
+		</div>
+    </center>
+
+<br>
+<head>
+<meta charset="utf-8" />
+<title>progress 태그</title>
+
+<script>
+    cnt = 0;
+    stopCheck = false;
+    setInterval(function(){
+        if(stopCheck == false) {
+            document.getElementsByTagName('progress')[0].value = cnt;
+            document.getElementsByTagName('b')[0].innerText = cnt + '%';
+            cnt++;
+            if (cnt > 100) {
+                stopCheck = true;
+                document.getElementsByTagName('p')[0];
+            }
+        }
+    },100);
+</script>
+</head>
+<body>
+    <progress value='0' max='100'></progress> <b></b>
+    <p></p>
+<br>
+<center><button>
+<a href="files/10x10x10mm_cube_(1).gcode" download="newfilename">다운로드</a></button>
+</center>
+<br>
+<img src="what we do.PNG" width="100%">
+</body>
+</html>
