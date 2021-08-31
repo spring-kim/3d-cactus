@@ -67,28 +67,7 @@
     </center>
 
 <br>
-<head>
-<meta charset="utf-8" />
-<title>progress 태그</title>
 
-<script>
-    cnt = 0;
-    stopCheck = false;
-    setInterval(function(){
-        if(stopCheck == false) {
-            document.getElementsByTagName('progress')[0].value = cnt;
-            cnt++;
-            if (cnt > 100) {
-                stopCheck = true;
-                document.getElementsByTagName('p')[0];
-            }
-        }
-    },100);
-</script>
-</head>
-<body>
-    <progress value='0' max='100'></progress> <b></b>
-    <p></p>
 <br>
 <center><button>
 <a href="files/10x10x10mm_cube_(1).gcode" download="newfilename">다운로드</a></button>
