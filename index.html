@@ -50,7 +50,6 @@
         setInterval(function(){
             if(stopCheck == false) {
                 document.getElementsByTagName('progress')[0].value = cnt;
-                document.getElementsByTagName('b')[0].innerText = cnt + '%';
                 cnt++;
                 if (cnt > 100) {
                     stopCheck = true;
@@ -78,7 +77,6 @@
     setInterval(function(){
         if(stopCheck == false) {
             document.getElementsByTagName('progress')[0].value = cnt;
-            document.getElementsByTagName('b')[0].innerText = cnt + '%';
             cnt++;
             if (cnt > 100) {
                 stopCheck = true;
